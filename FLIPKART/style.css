@@ -1,0 +1,146 @@
+.header {
+    border: 2px solid none;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_header {
+    border: 2px solid none;
+    width: 50%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_header {
+    border: 2px solid none;
+    width: 50%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.filpkart_logo,
+.travel_logo,
+.grocery_logo {
+    border: 2px solid none;
+    height: 50px;
+}
+
+.filpkart_logo {
+    width: 150px;
+    /* give proper width */
+    height: 50px;
+    /* IMPORTANT: height must be defined */
+    background-image: url("https://www.zopoyo.in/assets/stores/1685448524_Flipkart-Logo-2015-present.jpg");
+    background-size: contain;
+    /* or cover */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.travel_logo {
+    width: 150px;
+    /* give proper width */
+    height: 50px;
+    /* IMPORTANT: height must be defined */
+    background-image: url("https://media.istockphoto.com/id/1209871956/vector/aircraft-flight-travel-isometric-design.jpg?s=170667a&w=0&k=20&c=0k1qx8CRHHjYo_zKc7Ee0YXUHy3VGJLbWDtUmMnT5Ps=");
+    background-size: contain;
+    /* or cover */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.grocery_logo {
+    width: 150px;
+    /* give proper width */
+    height: 50px;
+    /* IMPORTANT: height must be defined */
+    background-image: url("https://img.freepik.com/premium-vector/grocery-store-logo-design_972076-1383.jpg?w=360");
+    background-size: contain;
+    /* or cover */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home_on_header {
+    border: 2px solid none;
+    height: 50px;
+    width: 150px;
+}
+
+.home_on_header {
+    background-image: url("https://tse3.mm.bing.net/th/id/OIP.2NaVm9dhAV5TzZRs62AXPQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: contain;
+    /* or cover */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    /* give proper width */
+    height: 50px;
+}
+
+.location_details {
+    height: 50px;
+    width: 250px;
+    border: 2px solid none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* navigation bar */
+
+.navigation_bar {
+    border: 2px solid none;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_engine,
+.user_info {
+    border: 2px solid none;
+    height: 50px;
+}
+
+.search_engine {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    border-color: blueviolet;
+}
+
+.user_info {
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.user_logo,
+.more,
+.cart {
+    border: 2px solid none;
+    height: 40px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

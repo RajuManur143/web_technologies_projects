@@ -1,0 +1,119 @@
+        h3 {
+            text-align: center;
+        }
+        
+        #navigationbar {
+            border: 2px solid none;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+        }
+        
+        #left_navigation,
+        #right_navigation {
+            border: 2px solid none;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+        
+        #left_navigation {
+            width: 55%;
+            color: white;
+        }
+        
+        #right_navigation {
+            width: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            color: white;
+        }
+        
+        #seach_engine,
+        #like,
+        #user,
+        #cart {
+            border: 2px solid none;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+        
+        input {
+            width: 100%;
+            height: 25px;
+        }
+        
+        #like {
+            color: white;
+        }
+        
+        .puma_logo {
+            display: block;
+            /* Important */
+            width: 100px;
+            /* Set width */
+            height: 80px;
+            /* Set height */
+            background-image: url("https://www.highsnobiety.com/static-assets/dato/1632765770-puma-cat-logo-history-feat1.jpg");
+            background-size: 100px 100px;
+            /* Better fit */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        #circle {
+            border: 2px solid none;
+            height: 200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        /* Outer circles */
+        
+        .circle1,
+        .circle2,
+        .circle3,
+        .circle4,
+        .circle5,
+        .circle6 {
+            border: 2px solid rgb(236, 117, 117);
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            display: flex;
+            /* ADD THIS */
+            align-items: center;
+            /* vertical center */
+            justify-content: center;
+            /* horizontal center */
+        }
+        /* Inner circles */
+        
+        .class11,
+        .class21,
+        .class31,
+        .class41,
+        .class51,
+        .class61 {
+            border: 2px solid none;
+            width: 120px;
+            /* smaller than parent */
+            height: 122px;
+            border-radius: 60%;
+            background-color: rgba(214, 206, 196, 0.938);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
