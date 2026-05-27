@@ -117,3 +117,28 @@
             align-items: center;
             justify-content: center;
         }
+        
+        .section1_image {
+            border: 2px solid red;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .right_side_image,
+        .left_side_image {
+            border: 2px solid red;
+            width: 50%;
+            height: 400px;
+        }
+        
+        .right_side_image {
+            background-image: url("https://img-cdn.publive.online/fit-in/1280x960/filters:format(webp)/afaqs/media/media_files/2026/02/03/rcb-2026-02-03-12-17-51.jpg");
+            background-size: 100% 100%;
+        }
+        
+        button {
+            position: relative;
+            right: 200px;
+        }

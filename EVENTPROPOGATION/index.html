@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gparent">
+        <div id="parent">
+            <div id="child"></div>
+        </div>
+    </div>
+
+    <script>
+        let gparent = document.querySelector("#gparent");
+        let parent = document.querySelector("#parent");
+        let child = document.querySelector("#child");
+
+
+        gparent.addEventListener("click",()=>{
+
+            console.log("gparent");
+
+        });
+        parent.addEventListener("click",(e1)=>{
+
+            e1.stopPropagation();
+            console.log("parent");
+
+        });
+
+        child.addEventListener("click",(e2)=>{
+            e2.stopPropagation();
+            console.log("child");
+
+        });
+
+    </script>
+</body>
+</html>

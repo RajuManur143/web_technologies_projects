@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login Page</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f2f2f2;
+        }
+
+        .container{
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table td{
+            padding: 10px;
+        }
+
+        input{
+            width: 220px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .btns{
+            text-align: center;
+        }
+
+        button{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .login-btn{
+            background: green;
+            color: white;
+        }
+
+        .reset-btn{
+            background: red;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <form id="loginForm">
+
+            <h2>Login Form</h2>
+
+            <table>
+
+                <tr>
+                    <td>User Name:</td>
+
+                    <td>
+                        <input type="text" id="username" placeholder="Enter username" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password:</td>
+
+                    <td>
+                        <input type="password" id="password" placeholder="Enter password" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="btns">
+
+                        <button type="submit" class="login-btn">
+                            Login
+                        </button>
+
+                        <button type="reset" class="reset-btn">
+                            Reset
+                        </button>
+
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+    </div>
+    <script>
+
+    let form = document.querySelector("#loginForm");
+    let resetBtn = document.querySelector("#resetBtn");
+
+    // Login button
+    form.addEventListener("submit", (e) => {
+
+        e.preventDefault();
+
+        let uname = document.querySelector("#username").value;
+        let pass = document.querySelector("#password").value;
+
+        // Store data
+        localStorage.setItem("username", uname); // key and value pair
+        localStorage.setItem("password", pass); // key and value pair
+
+        // alert("Login Data Stored Successfully!");
+
+        console.log(localStorage.getItem("username"));
+        console.log(localStorage.getItem("password"));
+
+    });
+
+    // Reset button
+    resetBtn.addEventListener("click", () => {
+
+        document.querySelector("#username").value = "";
+        document.querySelector("#password").value = "";
+
+        localStorage.removeItem("username");
+        localStorage.removeItem("password");
+
+        // alert("Data Reset Successfully!");
+
+    });
+
+</script>
+
+</body>
+</html>
