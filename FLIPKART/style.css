@@ -28,8 +28,7 @@
 
 .filpkart_logo,
 .travel_logo,
-.grocery_logo,
-.hp_logo {
+.grocery_logo {
     border: 2px solid none;
     height: 50px;
 }
@@ -77,6 +76,24 @@
     /* or cover */
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* HP Logo in Navigation */
+.user_logo_with_hp {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 30%;
+}
+
+.hp_logo_nav {
+    width: 35px;
+    height: 35px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100"><rect width="200" height="100" fill="%23003DA5" rx="5"/><text x="100" y="70" font-size="60" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">HP</text></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
 }
 
 .home_on_header {
